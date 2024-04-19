@@ -1,0 +1,248 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1800px;
+    text-align: center; /* Centered text as per the layout */
+    line-height: 1.6; /* Improve readability */
+}
+
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden; /* Clear floats */
+    height: 50px; /* Height of the navbar */
+    line-height: 50px; /* Center the links vertically */
+}
+
+.brand-title {
+    float: left; /* Align your name to the left */
+    color: white;
+    padding: 0 20px; /* Spacing around your name */
+    font-size: 1.2em; /* Size of your name */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    float: right; /* Align links to the right */
+}
+
+.nav-links li {
+    display: inline; /* Display links inline */
+    margin-right: 20px; /* Spacing between links */
+}
+
+.nav-links li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Color of the links */
+    font-size: 1em; /* Size of the link text */
+}
+
+.nav-links li a:hover {
+    color: #ddd; /* Color of link on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block; /* Stack the links */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .nav-links li a {
+        display: block; /* Make the link take the full width */
+        padding: 10px 0; /* Add some padding */
+    }
+
+    .brand-title {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+header h1 {
+    margin-top: 2em;
+    font-size: 2.4em; /* Responsive font size */
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 4em; /* Space below the header */
+}
+
+.smarts, .expertise, .about {
+    margin: 1em 5%;
+}
+
+.smarts h2, .about h2 {
+    font-size: 1.8em;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1em 0;
+}
+
+.expertise {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 2em; /* Space between sections */
+}
+
+.expertise div {
+    width: 45%; /* Half width with a little space in the middle */
+    margin-top: 5em;
+    margin-bottom: 1em;
+}
+
+.expertise h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.expertise p, .expertise ul {
+    text-align: center;
+    font-size: 1em;
+}
+
+.expertise ul {
+    list-style-type: disc; /* No bullets */
+    padding: 1em;
+}
+
+.expertise li {
+    margin: 0.5em 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%; /* You can adjust the width */
+    max-width: 1200px; /* Maximum width of the container */
+}
+
+.image-section img {
+    width: 60%; /* Adjust the width of the image */
+    max-width: 300px; /* Maximum width of the image */
+    height: auto;
+    align-items: center;
+    border-radius: 5px; /* You can adjust the border-radius */
+}
+
+.text-section {
+    width: 60%; /* Adjust text section width */
+    max-width: 600px; /* Maximum width of the text section */
+}
+
+.text-section h1 {
+    font-size: 2em; /* Adjust the font size */
+    margin-bottom: 0.5em;
+}
+
+.text-section p {
+    font-size: 1em; /* Adjust the font size */
+    line-height: 1.6;
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section img {
+        width: 70%; /* Adjust the width of the image for smaller devices */
+        margin-bottom: 1em;
+    }
+
+    .text-section {
+        width: 90%; /* Full width on small screens */
+    }
+}
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+    .expertise div {
+        width: 100%; /* Full width for smaller tablets */
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .smarts h2, .about h2 {
+        font-size: 1.5em;
+    }
+
+    .expertise h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Mobile and smaller */
+@media (max-width: 480px) {
+    .smarts h2, .about h2 {
+        font-size: 1.3em;
+    }
+
+    .expertise h3 {
+        font-size: 1.2em;
+    }
+
+    .expertise p, .expertise ul, .about p {
+        font-size: 0.9em;
+    }
+}
+
+.site-footer {
+    font-family: Helvetica, sans-serif;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Padding above and below the footer content */
+}
+
+.site-footer h2 {
+    margin: 0 0 10px; /* Spacing below the header */
+}
+
+.footer-links {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer-links li {
+    margin: 10px 0; /* Vertical spacing between links */
+}
+
+.footer-links a {
+    color: white; /* White link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+/* Add responsiveness if necessary */
+@media (max-width: 768px) {
+    /* Adjust footer styles for smaller screens */
+}
